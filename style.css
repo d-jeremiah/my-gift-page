@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
-/* Your Original Heading Styles */
+/* Heading Styles */
 h1 {
     text-align: center;
     color: red;
@@ -18,22 +19,13 @@ h3 {
     margin-top: 20px;
 }
 
-h4 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-h5 {
-    text-align: center;
-    margin-top: 25px;
-}
-
 p {
     text-align: center;
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
+    line-height: 1.6;
 }
 
 /* Nav Menu Styles */
@@ -78,32 +70,7 @@ p {
     border: 2px solid #767676;
 }
 
-/* Bright yellow announcement block styling */
-.announcement-bar {
-    background-color: #ffff00;
-    color: black;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Social link area */
-.social-section a {
-    color: #0000ee;
-    text-decoration: underline;
-}
-
-/* Bottom contact info layout */
-.contact-info {
-    margin-top: 40px;
-    color: #333;
-    line-height: 1.5;
-}
-
-/* =================================================== */
-/* FIXED: BULLETPROOF CENTERING FOR YOUR PROFILE PIC   */
-/* =================================================== */
+/* Profile Pic Centering Styles */
 .profile-area {
     text-align: center;
     width: 100%;
@@ -119,7 +86,6 @@ p {
     border-radius: 50%;
     border: 4px solid #3498db;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    float: none; 
 }
 
 /* Form layouts */

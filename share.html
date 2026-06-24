@@ -8,33 +8,30 @@
 </head>
 <body>
 
-    <button class="menu-btn" onclick="showMenu()">&#9776;</button>
+    <button class="menu-btn" onclick="showMenu()">☰</button>
+    
     <div id="myMenu" class="menu">
         <a href="index.html">home</a>
-        <a href="About.html">about</a>
+        <a href="about.html">about</a>
         <a href="contact.html">contact</a>
     </div>
 
-    <div class="gift-container">
-        <form id="giftForm" onsubmit="submitGift(event)">
-            <h2>Select One Gift</h2>
-            
+    <div class="gift-container" id="giftForm" style="display: block;">
+        <h2>Select One Gift</h2>
+        <form onsubmit="submitGift(event)">
             <div class="radio-group">
-                <label><input type="radio" name="gift" value="Car"> Car</label>
-                <label><input type="radio" name="gift" value="iPhone"> iPhone</label>
-                <label><input type="radio" name="gift" value="Android Phone"> Android Phone</label>
+                <label><input type="radio" name="gift" value="iPhone" required> iPhone</label>
                 <label><input type="radio" name="gift" value="Laptop"> Laptop</label>
-                <label><input type="radio" name="gift" value="Watch"> Watch</label>
+                <label><input type="radio" name="gift" value="Cash Prize"> Cash Prize</label>
             </div>
-            
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Submit Claim</button>
         </form>
+    </div>
 
-        <div id="claimMessage" style="display: none; text-align: center;">
-            <p id="successText" style="color: green; font-weight: bold; font-size: 18px;"></p>
-            <p>Please contact Engr. Jeremiah on WhatsApp to process your claim!</p>
-            <button onclick="goHome()" class="okay-btn">Okay</button>
-        </div>
+    <div class="gift-container" id="claimMessage" style="display: none; text-align: center;">
+        <h3 id="successText">Congratulations!</h3>
+        <p>Please contact Engr. Jeremiah on WhatsApp to process your claim!</p>
+        <button class="okay-btn" onclick="goHome()">Okay</button>
     </div>
 
     <script src="script.js"></script>

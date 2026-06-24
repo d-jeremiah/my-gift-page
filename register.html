@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claim Your Gift - Register</title>
+    <title>Register Info</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button class="menu-btn" onclick="showMenu()">&#9776;</button>
+    <button class="menu-btn" onclick="showMenu()">☰</button>
+    
     <div id="myMenu" class="menu">
         <a href="index.html">home</a>
-        <a href="About.html">about</a>
+        <a href="about.html">about</a>
         <a href="contact.html">contact</a>
     </div>
 
     <div class="gift-container">
-        <h2>Enter Your Details</h2>
-        <form onsubmit="saveUserAndProceed(event)">
+        <h2>Registration Portal</h2>
+        <form id="regForm" onsubmit="saveUserAndProceed(event)">
             <div class="input-group">
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" required placeholder="Enter your full name">
             </div>
-            
             <div class="input-group">
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" required placeholder="Enter your phone number">
+                <input type="tel" id="phoneNumber" required placeholder="Enter phone number">
             </div>
-            
-            <button type="submit" class="submit-btn">Next: Choose Gift</button>
+            <button type="submit" class="submit-btn">Proceed to Select Gift</button>
         </form>
     </div>
 
