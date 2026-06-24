@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select One Gift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="menu-btn" onclick="showMenu()">&#9776;</button>
+    <div id="myMenu" class="menu">
+        <a href="index.html">home</a>
+        <a href="About.html">about</a>
+        <a href="contact.html">contact</a>
+    </div>
+
+    <div class="gift-container">
+        <form id="giftForm" onsubmit="submitGift(event)">
+            <h2>Select One Gift</h2>
+            
+            <div class="radio-group">
+                <label><input type="radio" name="gift" value="Car"> Car</label>
+                <label><input type="radio" name="gift" value="iPhone"> iPhone</label>
+                <label><input type="radio" name="gift" value="Android Phone"> Android Phone</label>
+                <label><input type="radio" name="gift" value="Laptop"> Laptop</label>
+                <label><input type="radio" name="gift" value="Watch"> Watch</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div id="claimMessage" style="display: none; text-align: center;">
+            <p id="successText" style="color: green; font-weight: bold; font-size: 18px;"></p>
+            <p>Please contact Engr. Jeremiah on WhatsApp to process your claim!</p>
+            <button onclick="goHome()" class="okay-btn">Okay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

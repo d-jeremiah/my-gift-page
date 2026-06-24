@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Gift - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="menu-btn" onclick="showMenu()">&#9776;</button>
+    <div id="myMenu" class="menu">
+        <a href="index.html">home</a>
+        <a href="About.html">about</a>
+        <a href="contact.html">contact</a>
+    </div>
+
+    <div class="gift-container">
+        <h2>Enter Your Details</h2>
+        <form onsubmit="saveUserAndProceed(event)">
+            <div class="input-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" required placeholder="Enter your phone number">
+            </div>
+            
+            <button type="submit" class="submit-btn">Next: Choose Gift</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
