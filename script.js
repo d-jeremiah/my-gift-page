@@ -1,7 +1,8 @@
-// 1. NAVIGATION DRAWER MENU TOGGLE
+// 1. Toggles the Dropdown Navigation Menu open/closed when ☰ is clicked
 function showMenu() {
     var menu = document.getElementById("myMenu");
     if (!menu) return;
+    
     if (menu.style.display === "block") {
         menu.style.display = "none";
     } else {
@@ -9,7 +10,7 @@ function showMenu() {
     }
 }
 
-// 2. REGISTRATION PAGE DATA HANDLER
+// 2. Registration Page Submission Handler
 function saveUserAndProceed(event) {
     event.preventDefault(); 
     var nameField = document.getElementById("fullName");
@@ -18,11 +19,11 @@ function saveUserAndProceed(event) {
     if (nameField && phoneField) {
         sessionStorage.setItem("currentUserName", nameField.value);
         sessionStorage.setItem("currentUserPhone", phoneField.value);
-        window.location.href = "share.html"; // Straight direct path
+        window.location.href = "share.html"; 
     }
 }
 
-// 3. SELECTION PAGE & DATABASE STORAGE LOGIC
+// 3. Selection Page Database Handler 
 function submitGift(event) {
     event.preventDefault(); 
     var selectedGift = document.querySelector('input[name="gift"]:checked');
@@ -54,9 +55,7 @@ function submitGift(event) {
     if (msgEl) msgEl.style.display = "block";
 }
 
-// 4. HOME REDIRECTION CONTROL (FIXED)
+// 4. Force System Return to Homepage Root Link
 function goHome() {
-    window.location.href = 'index.html'; // Points exactly to your root index file
+    window.location.href = "index.html";
 }
-
-    

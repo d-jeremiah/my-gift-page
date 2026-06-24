@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <button class="menu-btn" onclick="showMenu()">☰</button>
+    <div class="menu-icon" onclick="showMenu()">☰</div>
     
     <div id="myMenu" class="menu">
         <a href="index.html">home</a>
@@ -16,6 +16,7 @@
         <a href="contact.html">contact</a>
     </div>
 
+    <!-- Form Interface -->
     <div class="gift-container" id="giftForm" style="display: block;">
         <h2>Select One Gift</h2>
         <form onsubmit="submitGift(event)">
@@ -28,8 +29,9 @@
         </form>
     </div>
 
+    <!-- Success Feedback Interface -->
     <div class="gift-container" id="claimMessage" style="display: none; text-align: center;">
-        <h3 id="successText">Congratulations!</h3>
+        <h3 id="successText" style="color: green;">Congratulations!</h3>
         <p>Please contact Engr. Jeremiah on WhatsApp to process your claim!</p>
         <button class="okay-btn" onclick="goHome()">Okay</button>
     </div>
